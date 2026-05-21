@@ -10,4 +10,8 @@ public class HolaController {
     public String saludar() {
         return "Hola desde Spring Boot!!";
     }
+    @GetMapping("/adios")
+    public String despedirse() {
+        return "Hasta luego! desde Spring Boot!!";
+    }
 }
