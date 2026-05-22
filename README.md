@@ -21,3 +21,9 @@ git push origin main
 git remote -v
 git clone https://github.com/WinTux/20260519.git
 ```
+
+# Sobre ramas
+```bash
+git checkout -b develop
+git checkout 
+```
