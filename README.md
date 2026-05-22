@@ -22,7 +22,7 @@ git remote -v
 git clone https://github.com/WinTux/20260519.git
 ```
 
-# Sobre ramas
+# Acerca del uso de ramas
 ```bash
 git checkout -b develop
 git checkout 
