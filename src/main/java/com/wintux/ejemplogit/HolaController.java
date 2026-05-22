@@ -12,6 +12,6 @@ public class HolaController {
     }
     @GetMapping("/adios")
     public String despedirse() {
-        return "Hasta luego! desde Spring Boot!!";
+        return "Hasta luego! desde Spring Boot!! usando nueva rama (ej. Pull request)";
     }
 }
