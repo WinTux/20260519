@@ -1,0 +1,10 @@
+name: Ejemplo de CI desde GitHub
+on: [push]
+jobs:
+  saludo:
+    runs-on: macos-latest
+    steps:
+      - name: Saludando (Github version)
+        uses: actions/checkout@v3
+      - name: Usando la consola de la VM
+        run: echo "Hola desde GitHub Actions"
