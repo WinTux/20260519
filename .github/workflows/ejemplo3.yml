@@ -32,3 +32,11 @@ jobs:
         env:
           SPRING_PROFILES_ACTIVE: dev
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+      - name: Deploy a produccion
+        run: |
+          echo "Deploying..."
+          # Ejemplo usando SCP para subir el jar generado a un servidor remoto
+          # scp target/*.jar usuario@host:/ruta/destino
+          # O MEJOR CON PASSWORD (considerando que crearemos un secret ALGUN_PWD):
+          # export SSHPASS= ${{ secrets.ALGUN_PWD }}
+          # sshpass -e scp archivo.jar usuario@servidor:/opt/apps/
