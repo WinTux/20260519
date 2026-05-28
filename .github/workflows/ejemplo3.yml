@@ -29,3 +29,6 @@ jobs:
             ${{ runner.os }}-maven-
       - name: Build & Test
         run: ./mvnw clean verify
+        env:
+          SPRING_PROFILES_ACTIVE: dev
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
