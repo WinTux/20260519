@@ -28,3 +28,7 @@ jobs:
         with:
           name: springboot-app
           path: target/*.jar
+      - name: Bajar JAR de workflow artifacts
+        uses: actions/download-artifact@v3.1.0
+        with:
+          name: springboot-app
