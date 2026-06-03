@@ -51,6 +51,7 @@ jobs:
       - name: Subir a GitHub Release
         uses: softprops/action-gh-release@v3
         with:
+          tag_name: v1.11.2
           files: target/*.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
