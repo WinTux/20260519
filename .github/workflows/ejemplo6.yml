@@ -32,6 +32,9 @@ jobs:
         uses: actions/download-artifact@v8.0.1
         with:
           name: springboot-app
+          path: ./jars
+      - name: Mostrar JAR(s) descargado(s)
+          run: ls -R ./jars
   creando-assets:
     runs-on: ubuntu-latest
     permissions:
