@@ -34,7 +34,7 @@ jobs:
           name: springboot-app
           path: ./jars
       - name: Mostrar JAR(s) descargado(s)
-          run: ls -R ./jars
+        run: ls -R ./jars
   creando-assets:
     runs-on: ubuntu-latest
     permissions:
