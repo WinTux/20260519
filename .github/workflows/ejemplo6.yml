@@ -49,7 +49,7 @@ jobs:
           SPRING_PROFILES_ACTIVE: dev
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
       - name: Subir a GitHub Release
-        uses: softprops/action-gh-release@3
+        uses: softprops/action-gh-release@v3
         with:
           files: target/*.jar
         env:
